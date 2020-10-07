@@ -1,0 +1,7 @@
+a=int(input("输入一个十进制数:"))
+print("十进制数%d"%a,end='')
+print("→二进制数{:b}".format(a))
+print("十进制数%d"%a,end='')
+print("→八进制数{:o}".format(a))
+print("十进制数%d"%a,end='')
+print("→十六进制数{:x}".format(a))
