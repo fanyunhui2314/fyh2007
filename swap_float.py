@@ -1,0 +1,9 @@
+x=float(input("输入数x的值:"))
+y=float(input("输入数y的值:"))
+print("\n")
+print("交换之前的x,y值:")
+print("x=%4.2f,y=%4.2f"%(x,y))
+x,y=y,x
+print("\n")
+print("交换之后的x,y值:")
+print("x=%4.2f,y=%4.2f"%(x,y))
