@@ -1,0 +1,7 @@
+a=float(input("输入a的值:"))
+b=float(input("输入b的值:"))
+print("a=%.2f,b=%.2f"%(a,b))
+print("加法:%.2f+%.2f=%.2f"%(a,b,a+b))
+print("减法:%.2f-%.2f=%.2f"%(a,b,a-b))
+print("乘法:%.2f×%.2f=%.2f"%(a,b,a*b))
+print("除法:%.2f÷%.2f=%.2f"%(a,b,a/b))
