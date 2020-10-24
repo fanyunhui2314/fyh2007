@@ -7,7 +7,7 @@ for i in range(1000,10000):
     b= int((i - 1000*a)/100)
     c= int((i - 1000*a-100*b)/10)
     d= i - 1000*a-100*b-10*c
-    x=list(str(1000*a+100*b+10*c+d))
+    x=str(1000*a+100*b+10*c+d)
     digits=list(x)
     digits.sort(reverse=True) #排列出最大数
     s1= int(''.join(digits))       #把列表里的元素合并成一个四位整数
