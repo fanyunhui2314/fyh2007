@@ -5,18 +5,17 @@ for i in range(0,10):
 print("未删除前的数列:",end='')
 for i in range(0,10):
           print(a[i],end='  ')
-print("\r")
+print(" ")
 y=int(input("请输入要删除的一个数:"))
-if y in a:
-    a.remove(y)
-    print("删除该数后的数列:",end='')
-    for i in range(0,9):
-        print(a[i],end='  ')
-elif y not in a:
+while y not in a:
     print("要删除的数是%d,该数不在原数列中!"%y,end='')
-    for i in range(0,10):
-        print(a[i],end='  ')
-   
+    y=int(input("请重新输入要删除的一个数:"))
+a.remove(y)
+print("%d这个数从数列中删除了"%y)
+print("删除该数后的数列:",end='')
+for i in range(0,9):
+    print(a[i],end='  ')
+
 
 
 

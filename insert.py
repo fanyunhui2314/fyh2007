@@ -5,19 +5,17 @@ for i in range(0,10):
 print("未插入数前的数列:",end='')
 for i in range(0,10):
           print(a[i],end='  ')
-print("\r")
+print(" ")
 num=int(input("请输入要插入的一个数:"))
 pos=int(input("请输入要插入的位置(pos<=10):"))
-if pos<=10:
-    a.insert(pos,num)
-else:
+while pos>10:
     print("输入的数太大,请输入一个<=10的整数!")
-    pos=int(input("请输入要插入的位置(pos<=10):"))
-    a.insert(pos,num)
+    pos=int(input("请输入要插入的位置(pos<=10):"))    
+a.insert(pos,num)
 print("插入该数后的数列:",end='')
 for i in range(0,11):
           print(a[i],end='  ')
-print("\r")
+print(" ")
 a.sort()
 print("重新排序后的数列:",end='')
 for i in range(0,11):
